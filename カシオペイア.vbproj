@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C091B29-9602-4252-A846-98D67DBC85AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>カシオペイア.My.MyApplication</StartupObject>
+    <RootNamespace>カシオペイア</RootNamespace>
+    <AssemblyName>カシオペイア</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>カシオペイア.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>カシオペイア.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsDB.vb" />
+    <Compile Include="clsLineMsg.vb" />
+    <Compile Include="clsコンボボックス.vb" />
+    <Compile Include="cls環境設定.vb" />
+    <Compile Include="sfrmScolorサンプル.designer.vb">
+      <DependentUpon>sfrmScolorサンプル.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmScolorサンプル.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM案件.Designer.vb">
+      <DependentUpon>frmM案件.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM案件.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmS1週間表示.designer.vb">
+      <DependentUpon>frmS1週間表示.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmS1週間表示.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSカレンダー.designer.vb">
+      <DependentUpon>frmSカレンダー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSカレンダー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmS個別カレンダー.designer.vb">
+      <DependentUpon>frmS個別カレンダー.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmS個別カレンダー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmLineメッセージ.Designer.vb">
+      <DependentUpon>sfrmLineメッセージ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmLineメッセージ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmS予定登録.designer.vb">
+      <DependentUpon>sfrmS予定登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmS予定登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrm会員情報.Designer.vb">
+      <DependentUpon>sfrm会員情報.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrm会員情報.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmL勤怠登録.Designer.vb">
+      <DependentUpon>frmL勤怠登録.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmL勤怠登録.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM環境設定.Designer.vb">
+      <DependentUpon>frmM環境設定.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM環境設定.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlCommon.vb" />
+    <Compile Include="sfrmベース.Designer.vb">
+      <DependentUpon>sfrmベース.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmメッセージ.Designer.vb">
+      <DependentUpon>sfrmメッセージ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmメッセージ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrmログイン.Designer.vb">
+      <DependentUpon>sfrmログイン.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrmログイン.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM企業.Designer.vb">
+      <DependentUpon>frmM企業.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM企業.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM会員.Designer.vb">
+      <DependentUpon>frmM会員.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM会員.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM会員スキル.Designer.vb">
+      <DependentUpon>frmM会員スキル.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM会員スキル.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmベース.Designer.vb">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmベース.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmメニュー.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmメニュー.Designer.vb">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImeComposition.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="frmMプロジェクト.Designer.vb">
+      <DependentUpon>frmMプロジェクト.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMプロジェクト.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM郵便番号取込.Designer.vb">
+      <DependentUpon>frmM郵便番号取込.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM郵便番号取込.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmM区分管理.Designer.vb">
+      <DependentUpon>frmM区分管理.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmM区分管理.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sfrm住所検索.Designer.vb">
+      <DependentUpon>sfrm住所検索.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrm住所検索.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sfrm日付選択.Designer.vb">
+      <DependentUpon>sfrm日付選択.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sfrm日付選択.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="sfrmScolorサンプル.resx">
+      <DependentUpon>sfrmScolorサンプル.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM案件.resx">
+      <DependentUpon>frmM案件.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmL勤怠登録.resx">
+      <DependentUpon>frmL勤怠登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM環境設定.resx">
+      <DependentUpon>frmM環境設定.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmS1週間表示.resx">
+      <DependentUpon>frmS1週間表示.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSカレンダー.resx">
+      <DependentUpon>frmSカレンダー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmS個別カレンダー.resx">
+      <DependentUpon>frmS個別カレンダー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmLineメッセージ.resx">
+      <DependentUpon>sfrmLineメッセージ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmS予定登録.resx">
+      <DependentUpon>sfrmS予定登録.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrm会員情報.resx">
+      <DependentUpon>sfrm会員情報.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmメッセージ.resx">
+      <DependentUpon>sfrmメッセージ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrmログイン.resx">
+      <DependentUpon>sfrmログイン.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM企業.resx">
+      <DependentUpon>frmM企業.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM会員.resx">
+      <DependentUpon>frmM会員.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM会員スキル.resx">
+      <DependentUpon>frmM会員スキル.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmベース.resx">
+      <DependentUpon>frmベース.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmメニュー.resx">
+      <DependentUpon>frmメニュー.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMプロジェクト.resx">
+      <DependentUpon>frmMプロジェクト.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM郵便番号取込.resx">
+      <DependentUpon>frmM郵便番号取込.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmM区分管理.resx">
+      <DependentUpon>frmM区分管理.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrm住所検索.resx">
+      <DependentUpon>sfrm住所検索.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sfrm日付選択.resx">
+      <DependentUpon>sfrm日付選択.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.bat" />
+    <None Include="Resources\カシオペイア.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\カレンダー.png" />
+    <Content Include="Resources\休暇.png" />
+    <Content Include="Resources\出張.png" />
+    <Content Include="Resources\出社.png" />
+    <Content Include="Resources\退社.png" />
+    <None Include="Resources\Warning.png" />
+    <None Include="Resources\Question.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\Error.png" />
+    <Content Include="カシオペイア.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
