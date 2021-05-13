@@ -1,4 +1,6 @@
-﻿Imports System.Data.SqlClient
+﻿'予定の取得を1週間分まとめて取得に変更
+'別のブランチとして保存
+Imports System.Data.SqlClient
 Imports System.Data
 
 
@@ -73,6 +75,8 @@ Public Class frm週間表示
 
             dW(i) = monDt.AddDays(i).ToString("MM/dd (ddd)")
         Next
+        Dim monDate As Date = dW(0)     '月曜日の日付
+        Dim sunDate As Date = dW(6)     '日曜日の日付
         ' Dim d月 As String = dt.AddDays(2 - wd).ToString("MM/dd (ddd)")
 
         '  dtbl週間表示(0)(3) = dt.AddDays(2 - wd).ToString("MM/dd (ddd)")
@@ -87,18 +91,15 @@ Public Class frm週間表示
 
         '
         '  dtbl週間表示.Rows.Count-------いま何行使っているか
-        '   n_strtRowIndex ------ 別の会員に移った時にどの行から書き始めるか
-        '   n_eventCount -------  その日に 表示した予定の数 (使った行数)
-        '   weekDindex ------- 処理中の曜日
-        '    midasiFlag -----  会員名は1回だけ表示
         '   dtbl週間カレンダー ----- hyoujisuru1週間の日にちを記したもの
         '
-        Dim dtblある日の〇さんの予定一覧 As New DataTable
+        Dim dtblある週の〇さんの予定一覧 As New DataTable
 
         Dim midasiFlag As Boolean = False   '日付けは1回だけ表示
-        Dim n_eventCount As Integer = 0
-        Dim n_strtRowIndex As Integer = 0
-        Dim weekDindex As Integer
+        Dim n_eventCount As Integer = 0     '   n_eventCount -------  その日に 表示した予定の数 (使った行数)
+        Dim n_strtRowIndex As Integer = 0   '   n_strtRowIndex ------ 別の会員に移った時にどの行から書き始めるか
+        Dim weekDindex As Integer           '   weekDindex ------- 処理中の曜日
+
         Dim rowIndex As Integer
         For Each get会員ID As DataRow In dtbl会員名簿.Rows
 
@@ -106,26 +107,45 @@ Public Class frm週間表示
             n_strtRowIndex = dtbl週間表示.Rows.Count
             n_eventCount = 0
             weekDindex = 1    '週初
-            For Each getある日の〇さんの予定 As DataRow In dtbl週間カレンダー.Rows
-                dtblある日の〇さんの予定一覧.Clear()
-                ''検索SQL======================================================
-                msSQL = "SELECT a.*, b.氏名"
-                msSQL += " FROM MST_スケジュール as a INNER JOIN MST_会員 b "
-                msSQL += " ON a.会員ID = b.会員ID"
-                msSQL += " WHERE a.会員ID="
-                msSQL += "'" & get会員ID("会員ID") & "'"
-                msSQL += " AND 開始日="
-                msSQL += "'" & getある日の〇さんの予定("表示する日付") & "'"
-                msSQL += "ORDER BY 開始時間"
-                mCommand = cDB.getsqlComand(msSQL)
-                mSDA.SelectCommand = mCommand
-                Call mSDA.Fill(dtblある日の〇さんの予定一覧)
+            '  For Each getOneday As DataRow In dtbl週間カレンダー.Rows
+            dtblある週の〇さんの予定一覧.Clear()
+            ''検索SQL======================================================
+            'DBのアクセス回数を減らすため1週間分まとめてとってくる
+            msSQL = "SELECT a.*, b.氏名"
+            msSQL += " FROM MST_スケジュール as a INNER JOIN MST_会員 b "
+            msSQL += " ON a.会員ID = b.会員ID"
+            msSQL += " WHERE a.会員ID="
+            msSQL += "'" & get会員ID("会員ID") & "'"
+            msSQL += " AND (開始日"
+            'msSQL += "'" & getOneday("表示する日付") & "'"
 
+            msSQL += "  >= '" & monDate.ToString("yyyy/MM/dd") & "' and 開始日 <= '" & sunDate.ToString("yyyy/MM/dd") & "')"
+            msSQL += " ORDER BY 開始日,開始時間"
+            mCommand = cDB.getsqlComand(msSQL)
+            mSDA.SelectCommand = mCommand
+            Call mSDA.Fill(dtblある週の〇さんの予定一覧)
+
+
+
+
+            For Each getOneday As DataRow In dtbl週間カレンダー.Rows
+                Dim oneDay As Date = getOneday("表示する日付")
                 weekDindex += 1     '曜日がかわったのでカウントアップ
                 n_eventCount = 0
-                If dtblある日の〇さんの予定一覧.Rows.Count > 0 Then
+
+                Dim d1 As DataRow()
+                d1 = dtblある週の〇さんの予定一覧.Select("開始日= '" + oneDay + "'")
+
+                For Each d As DataRow In d1
+                    '  MsgBox(d("予定").ToString)  'getOneday("表示する日付")
+                    ' Next
+
+
+
+
+                    '  If dtblある週の〇さんの予定一覧.Rows.Count > 0 Then
                     Dim row週間表示 As DataRow = dtbl週間表示.NewRow
-                    For Each get行 As DataRow In dtblある日の〇さんの予定一覧.Rows
+                        'For Each get行 As DataRow In dtblある週の〇さんの予定一覧.Rows
                         n_eventCount += 1
                         '1行増やすか判定
                         If dtbl週間表示.Rows.Count < n_eventCount + n_strtRowIndex Then
@@ -134,32 +154,40 @@ Public Class frm週間表示
                             '       n_eventCount += 1
                         End If
                         Dim s予定 As String = ""
-                        s予定 += get行("color") & vbCrLf      '改行
-                        s予定 += get行("予定") & vbCrLf
-                        s予定 += get行("記事") & vbCrLf
-                        s予定 += get行("開始時間") & " ～ "
-                        s予定 += get行("終了時間") & vbCrLf
-                        s予定 += get行("開始日") & " ～ "
-                        s予定 += get行("終了日")
-
+                        's予定 += get行("color") & vbCrLf      '改行
+                        's予定 += get行("予定") & vbCrLf
+                        's予定 += get行("記事") & vbCrLf
+                        's予定 += get行("開始時間") & " ～ "
+                        's予定 += get行("終了時間") & vbCrLf
+                        's予定 += get行("開始日") & " ～ "
+                        's予定 += get行("終了日")
+                        s予定 += d("color") & vbCrLf      '改行
+                        s予定 += d("予定") & vbCrLf
+                        s予定 += d("記事") & vbCrLf
+                        s予定 += d("開始時間") & " ～ "
+                        s予定 += d("終了時間") & vbCrLf
+                        s予定 += d("開始日") & " ～ "
+                        s予定 += d("終了日")
                         '      With dtbl週間表示.Rows.Count - 1
                         rowIndex = (dtbl週間表示.Rows.Count - 1) -
                                 ((dtbl週間表示.Rows.Count - 1) - (n_strtRowIndex + (n_eventCount - 1)))   'どの行に書き込めばよいか
 
                         dtbl週間表示.Rows(rowIndex)(weekDindex) = s予定
                         If wりcheck = False Then
-                            row週間表示("氏名") = get行("氏名")
+                            row週間表示("氏名") = d("氏名")
                             wりcheck = True
                         Else
                             row週間表示("氏名") = ""
                         End If
 
-                    Next
-                End If
+                        'Next
+
+                    ' End If
+                Next
             Next
 
         Next
-        midasiFlag = False
+            midasiFlag = False
 
 
         dgv週間表示.DataSource = dtbl週間表示
