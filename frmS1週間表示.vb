@@ -116,7 +116,7 @@ Public Class frm週間表示
                 msSQL += "'" & get会員ID("会員ID") & "'"
                 msSQL += " AND 開始日="
                 msSQL += "'" & getある日の〇さんの予定("表示する日付") & "'"
-
+                msSQL += "ORDER BY 開始時間"
                 mCommand = cDB.getsqlComand(msSQL)
                 mSDA.SelectCommand = mCommand
                 Call mSDA.Fill(dtblある日の〇さんの予定一覧)
