@@ -1,4 +1,5 @@
-﻿Imports System.Data.SqlClient
+﻿'1週間表示で、日ごとに予定を取得する方式。210512    
+Imports System.Data.SqlClient
 Imports System.Data
 
 
