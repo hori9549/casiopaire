@@ -145,49 +145,49 @@ Public Class frm週間表示
 
                     '  If dtblある週の〇さんの予定一覧.Rows.Count > 0 Then
                     Dim row週間表示 As DataRow = dtbl週間表示.NewRow
-                        'For Each get行 As DataRow In dtblある週の〇さんの予定一覧.Rows
-                        n_eventCount += 1
-                        '1行増やすか判定
-                        If dtbl週間表示.Rows.Count < n_eventCount + n_strtRowIndex Then
-                            row週間表示 = dtbl週間表示.NewRow
-                            dtbl週間表示.Rows.Add(row週間表示)
-                            '       n_eventCount += 1
-                        End If
-                        Dim s予定 As String = ""
-                        's予定 += get行("color") & vbCrLf      '改行
-                        's予定 += get行("予定") & vbCrLf
-                        's予定 += get行("記事") & vbCrLf
-                        's予定 += get行("開始時間") & " ～ "
-                        's予定 += get行("終了時間") & vbCrLf
-                        's予定 += get行("開始日") & " ～ "
-                        's予定 += get行("終了日")
-                        s予定 += d("color") & vbCrLf      '改行
-                        s予定 += d("予定") & vbCrLf
-                        s予定 += d("記事") & vbCrLf
-                        s予定 += d("開始時間") & " ～ "
-                        s予定 += d("終了時間") & vbCrLf
-                        s予定 += d("開始日") & " ～ "
-                        s予定 += d("終了日")
-                        '      With dtbl週間表示.Rows.Count - 1
-                        rowIndex = (dtbl週間表示.Rows.Count - 1) -
+                    'For Each get行 As DataRow In dtblある週の〇さんの予定一覧.Rows
+                    n_eventCount += 1
+                    '1行増やすか判定
+                    If dtbl週間表示.Rows.Count < n_eventCount + n_strtRowIndex Then
+                        row週間表示 = dtbl週間表示.NewRow
+                        dtbl週間表示.Rows.Add(row週間表示)
+                        '       n_eventCount += 1
+                    End If
+                    Dim s予定 As String = ""
+                    's予定 += get行("color") & vbCrLf      '改行
+                    's予定 += get行("予定") & vbCrLf
+                    's予定 += get行("記事") & vbCrLf
+                    's予定 += get行("開始時間") & " ～ "
+                    's予定 += get行("終了時間") & vbCrLf
+                    's予定 += get行("開始日") & " ～ "
+                    's予定 += get行("終了日")
+                    s予定 += d("color") & vbCrLf      '改行
+                    s予定 += d("予定") & vbCrLf
+                    s予定 += d("記事") & vbCrLf
+                    s予定 += d("開始時間") & " ～ "
+                    s予定 += d("終了時間") & vbCrLf
+                    s予定 += d("開始日") & " ～ "
+                    s予定 += d("終了日")
+                    '      With dtbl週間表示.Rows.Count - 1
+                    rowIndex = (dtbl週間表示.Rows.Count - 1) -
                                 ((dtbl週間表示.Rows.Count - 1) - (n_strtRowIndex + (n_eventCount - 1)))   'どの行に書き込めばよいか
 
-                        dtbl週間表示.Rows(rowIndex)(weekDindex) = s予定
-                        If wりcheck = False Then
-                            row週間表示("氏名") = d("氏名")
-                            wりcheck = True
-                        Else
-                            row週間表示("氏名") = ""
-                        End If
+                    dtbl週間表示.Rows(rowIndex)(weekDindex) = s予定
+                    If wりcheck = False Then
+                        row週間表示("氏名") = d("氏名")
+                        wりcheck = True
+                    Else
+                        row週間表示("氏名") = ""
+                    End If
 
-                        'Next
+                    'Next
 
                     ' End If
                 Next
             Next
 
         Next
-            midasiFlag = False
+        midasiFlag = False
 
 
         dgv週間表示.DataSource = dtbl週間表示
