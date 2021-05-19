@@ -1,5 +1,6 @@
 ﻿'予定の取得を1週間分まとめて取得に変更
 '別のブランチとして保存
+'210519 参照訂正
 Imports System.Data.SqlClient
 Imports System.Data
 

@@ -552,7 +552,7 @@ Public Class frmM会員
     End Sub
 
     Private Sub btn会員名簿_Click(sender As Object, e As EventArgs) Handles btn会員名簿.Click
-        Dim sテンプレートパス As String = "Temp\会員名簿.xlsx"
+        Dim sテンプレートパス As String = "Temp/会員名簿.xlsx"
         Dim getExcelファイル As String
 
         Try
