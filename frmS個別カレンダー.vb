@@ -303,7 +303,7 @@ Public Class frm個別カレンダー
                                     Dim P(3) As String
                                     hexColor = Convert.ToString(d, 16)
                                     '  Call makeParam(hexColor, R, G, B)
-                                    P = sfrmS予定登録.rtnRGB(hexColor)
+                                    P = mdlCommon.rtnParameter(hexColor)
                                     .Style.BackColor = Color.FromArgb(P(0), P(1), P(2))
                                     .Style.ForeColor = Color.FromArgb(P(0), P(1), P(2))
 

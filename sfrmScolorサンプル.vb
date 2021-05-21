@@ -132,7 +132,7 @@ Public Class sfrmScolorサンプル
         For i = 0 To 15
             BtnColr = aryBtnList(i).Text
             '  Call makeParam(hexColor, R, G, B)
-            P = sfrmS予定登録.rtnRGB(BtnColr)
+            P = mdlCommon.rtnParameter(BtnColr)
 
             ' Call makeParam(BtnColr, R, G, B)          'プロパティに値を設定
 

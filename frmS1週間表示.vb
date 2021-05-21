@@ -193,7 +193,7 @@ Public Class frm週間表示
                             If Integer.TryParse(str(0), d) Then
                                 Dim P(3) As String
                                 hexColor = Convert.ToString(d, 16)
-                                P = sfrmS予定登録.rtnRGB(hexColor)
+                                P = mdlCommon.rtnParameter(hexColor)
                                 .Style.BackColor = Color.FromArgb(P(0), P(1), P(2))
                                 '  .Style.ForeColor = Color.FromArgb(R, G, B)
                                 .Value = .Value.ToString.Remove(0, strStatus.Length + 2)     '先頭のcolorコードと改行コードを取り除く

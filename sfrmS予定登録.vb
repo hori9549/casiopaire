@@ -272,7 +272,7 @@ Public Class sfrmS予定登録
         ' TXT規定色に彩色
         予定color = 規定色
         Dim RGB() As String
-        RGB = sfrmS予定登録.rtnRGB(予定color)
+        RGB = mdlCommon.rtnParameter(予定color)
         txtColor.BackColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
         btnColor.BackColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
     End Sub
@@ -332,7 +332,7 @@ Public Class sfrmS予定登録
                 Dim d As Integer = Integer.Parse(.Rows(i).Cells("colcolor").Value.ToString)
                 Dim inHex As String = Convert.ToString(d, 16)
 
-                P = rtnRGB(inHex)
+                P = mdlCommon.rtnParameter(inHex)
                 ' MsgBox(dgv一覧.Rows(i).Cells("colcolor").Value) '= Color.FromArgb(P(0), P(1), P(2))
                 dgv一覧.Rows(i).Cells("colcolor").Style.BackColor = Color.FromArgb(P(0), P(1), P(2))
                 dgv一覧.Rows(i).Cells("colcolor").Style.ForeColor = Color.FromArgb(P(0), P(1), P(2))
@@ -552,7 +552,7 @@ Public Class sfrmS予定登録
             txtColor.Text = hexColor
 
             Dim RGB(3) As String
-            RGB = sfrmS予定登録.rtnRGB(hexColor)
+            RGB = mdlCommon.rtnParameter(hexColor)
             '    Call makeParam(hexColor, r, g, b)   
             'プロパティに値を設定
             btnColor.BackColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
@@ -716,7 +716,7 @@ Public Class sfrmS予定登録
         'btnColor.BackColor = Color.FromArgb(r, g, b)
         'txtColor.BackColor = Color.FromArgb(r, g, b)
         Dim RGB() As String
-        RGB = sfrmS予定登録.rtnRGB(予定color)
+        RGB = mdlCommon.rtnParameter(予定color)
         btnColor.BackColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
         txtColor.BackColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
         txtColor.ForeColor = Color.FromArgb(RGB(0), RGB(1), RGB(2))
@@ -725,40 +725,40 @@ Public Class sfrmS予定登録
 
     End Sub
 
-    Public Shared Function rtnRGB(ByVal hexNum As String) As String()
-        Dim P(2) As String
-        Dim strTempColor As String
-        Dim HexKasira As String = "&H"
-        strTempColor = hexNum
-        Select Case hexNum.Length         'HexのLengthによる処理
-            Case 1 To 2
-                P(0) = "&H0"
-                P(1) = "&H0"
-                P(2) = HexKasira & Mid(strTempColor, 1)
-            Case 3
-                P(0) = "&H0"
-                P(1) = HexKasira & Mid(strTempColor, 1, 1)
-                P(2) = HexKasira & Mid(strTempColor, 2, 2)
-            Case 4
-                P(0) = "&H0"
-                P(1) = HexKasira & Mid(strTempColor, 1, 2)
-                P(2) = HexKasira & Mid(strTempColor, 3, 2)
-            Case 5
-                P(0) = HexKasira & Mid(strTempColor, 1, 1)
-                P(1) = HexKasira & Mid(strTempColor, 2, 2)
-                P(2) = HexKasira & Mid(strTempColor, 4, 2)
-            Case 6
-                P(0) = HexKasira & Mid(strTempColor, 1, 2)
-                P(1) = HexKasira & Mid(strTempColor, 3, 2)
-                P(2) = HexKasira & Mid(strTempColor, 5, 2)
-            Case Else
-                P(0) = "&Hff"
-                P(1) = "&Hff"
-                P(2) = "&Hff"
-        End Select
+    'Public Shared Function rtnRGB(ByVal hexNum As String) As String()
+    '    Dim P(2) As String
+    '    Dim strTempColor As String
+    '    Dim HexKasira As String = "&H"
+    '    strTempColor = hexNum
+    '    Select Case hexNum.Length         'HexのLengthによる処理
+    '        Case 1 To 2
+    '            P(0) = "&H0"
+    '            P(1) = "&H0"
+    '            P(2) = HexKasira & Mid(strTempColor, 1)
+    '        Case 3
+    '            P(0) = "&H0"
+    '            P(1) = HexKasira & Mid(strTempColor, 1, 1)
+    '            P(2) = HexKasira & Mid(strTempColor, 2, 2)
+    '        Case 4
+    '            P(0) = "&H0"
+    '            P(1) = HexKasira & Mid(strTempColor, 1, 2)
+    '            P(2) = HexKasira & Mid(strTempColor, 3, 2)
+    '        Case 5
+    '            P(0) = HexKasira & Mid(strTempColor, 1, 1)
+    '            P(1) = HexKasira & Mid(strTempColor, 2, 2)
+    '            P(2) = HexKasira & Mid(strTempColor, 4, 2)
+    '        Case 6
+    '            P(0) = HexKasira & Mid(strTempColor, 1, 2)
+    '            P(1) = HexKasira & Mid(strTempColor, 3, 2)
+    '            P(2) = HexKasira & Mid(strTempColor, 5, 2)
+    '        Case Else
+    '            P(0) = "&Hff"
+    '            P(1) = "&Hff"
+    '            P(2) = "&Hff"
+    '    End Select
 
-        Return P
-    End Function
+    '    Return P
+    'End Function
 
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
