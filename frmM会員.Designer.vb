@@ -114,170 +114,153 @@ Partial Class frmM会員
         'lbl会員ID
         '
         Me.lbl会員ID.AutoSize = True
-        Me.lbl会員ID.Location = New System.Drawing.Point(32, 19)
-        Me.lbl会員ID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl会員ID.Location = New System.Drawing.Point(42, 24)
         Me.lbl会員ID.Name = "lbl会員ID"
-        Me.lbl会員ID.Size = New System.Drawing.Size(64, 19)
+        Me.lbl会員ID.Size = New System.Drawing.Size(80, 24)
         Me.lbl会員ID.TabIndex = 0
         Me.lbl会員ID.Text = "会員ID"
         '
         'lblパスワード
         '
         Me.lblパスワード.AutoSize = True
-        Me.lblパスワード.Location = New System.Drawing.Point(295, 19)
-        Me.lblパスワード.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblパスワード.Location = New System.Drawing.Point(383, 24)
         Me.lblパスワード.Name = "lblパスワード"
-        Me.lblパスワード.Size = New System.Drawing.Size(84, 19)
+        Me.lblパスワード.Size = New System.Drawing.Size(103, 24)
         Me.lblパスワード.TabIndex = 3
         Me.lblパスワード.Text = "パスワード"
         '
         'lblフリガナ
         '
         Me.lblフリガナ.AutoSize = True
-        Me.lblフリガナ.Location = New System.Drawing.Point(33, 51)
-        Me.lblフリガナ.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblフリガナ.Location = New System.Drawing.Point(43, 64)
         Me.lblフリガナ.Name = "lblフリガナ"
-        Me.lblフリガナ.Size = New System.Drawing.Size(63, 19)
+        Me.lblフリガナ.Size = New System.Drawing.Size(78, 24)
         Me.lblフリガナ.TabIndex = 6
         Me.lblフリガナ.Text = "フリガナ"
         '
         'lbl氏名
         '
         Me.lbl氏名.AutoSize = True
-        Me.lbl氏名.Location = New System.Drawing.Point(49, 83)
-        Me.lbl氏名.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl氏名.Location = New System.Drawing.Point(64, 105)
         Me.lbl氏名.Name = "lbl氏名"
-        Me.lbl氏名.Size = New System.Drawing.Size(47, 19)
+        Me.lbl氏名.Size = New System.Drawing.Size(58, 24)
         Me.lbl氏名.TabIndex = 13
         Me.lbl氏名.Text = "氏名"
         '
         'lbl性別
         '
         Me.lbl性別.AutoSize = True
-        Me.lbl性別.Location = New System.Drawing.Point(648, 51)
-        Me.lbl性別.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl性別.Location = New System.Drawing.Point(842, 64)
         Me.lbl性別.Name = "lbl性別"
-        Me.lbl性別.Size = New System.Drawing.Size(47, 19)
+        Me.lbl性別.Size = New System.Drawing.Size(58, 24)
         Me.lbl性別.TabIndex = 11
         Me.lbl性別.Text = "性別"
         '
         'lbl生年月日
         '
         Me.lbl生年月日.AutoSize = True
-        Me.lbl生年月日.Location = New System.Drawing.Point(294, 83)
-        Me.lbl生年月日.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl生年月日.Location = New System.Drawing.Point(382, 105)
         Me.lbl生年月日.Name = "lbl生年月日"
-        Me.lbl生年月日.Size = New System.Drawing.Size(85, 19)
+        Me.lbl生年月日.Size = New System.Drawing.Size(106, 24)
         Me.lbl生年月日.TabIndex = 16
         Me.lbl生年月日.Text = "生年月日"
         '
         'lbl郵便番号
         '
         Me.lbl郵便番号.AutoSize = True
-        Me.lbl郵便番号.Location = New System.Drawing.Point(11, 147)
-        Me.lbl郵便番号.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl郵便番号.Location = New System.Drawing.Point(14, 186)
         Me.lbl郵便番号.Name = "lbl郵便番号"
-        Me.lbl郵便番号.Size = New System.Drawing.Size(85, 19)
+        Me.lbl郵便番号.Size = New System.Drawing.Size(106, 24)
         Me.lbl郵便番号.TabIndex = 28
         Me.lbl郵便番号.Text = "郵便番号"
         '
         'lbl電話番号
         '
         Me.lbl電話番号.AutoSize = True
-        Me.lbl電話番号.Location = New System.Drawing.Point(610, 82)
-        Me.lbl電話番号.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl電話番号.Location = New System.Drawing.Point(793, 104)
         Me.lbl電話番号.Name = "lbl電話番号"
-        Me.lbl電話番号.Size = New System.Drawing.Size(85, 19)
+        Me.lbl電話番号.Size = New System.Drawing.Size(106, 24)
         Me.lbl電話番号.TabIndex = 20
         Me.lbl電話番号.Text = "電話番号"
         '
         'lblメールアドレス
         '
         Me.lblメールアドレス.AutoSize = True
-        Me.lblメールアドレス.Location = New System.Drawing.Point(268, 115)
-        Me.lblメールアドレス.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblメールアドレス.Location = New System.Drawing.Point(348, 145)
         Me.lblメールアドレス.Name = "lblメールアドレス"
-        Me.lblメールアドレス.Size = New System.Drawing.Size(111, 19)
+        Me.lblメールアドレス.Size = New System.Drawing.Size(138, 24)
         Me.lblメールアドレス.TabIndex = 26
         Me.lblメールアドレス.Text = "メールアドレス"
         '
         'lbl担当理事
         '
         Me.lbl担当理事.AutoSize = True
-        Me.lbl担当理事.Location = New System.Drawing.Point(10, 179)
-        Me.lbl担当理事.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl担当理事.Location = New System.Drawing.Point(13, 226)
         Me.lbl担当理事.Name = "lbl担当理事"
-        Me.lbl担当理事.Size = New System.Drawing.Size(85, 19)
+        Me.lbl担当理事.Size = New System.Drawing.Size(106, 24)
         Me.lbl担当理事.TabIndex = 32
         Me.lbl担当理事.Text = "担当理事"
         '
         'lbl入会日
         '
         Me.lbl入会日.AutoSize = True
-        Me.lbl入会日.Location = New System.Drawing.Point(312, 179)
-        Me.lbl入会日.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl入会日.Location = New System.Drawing.Point(406, 226)
         Me.lbl入会日.Name = "lbl入会日"
-        Me.lbl入会日.Size = New System.Drawing.Size(66, 19)
+        Me.lbl入会日.Size = New System.Drawing.Size(82, 24)
         Me.lbl入会日.TabIndex = 34
         Me.lbl入会日.Text = "入会日"
         '
         'lbl退会日
         '
         Me.lbl退会日.AutoSize = True
-        Me.lbl退会日.Location = New System.Drawing.Point(629, 180)
-        Me.lbl退会日.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl退会日.Location = New System.Drawing.Point(818, 227)
         Me.lbl退会日.Name = "lbl退会日"
-        Me.lbl退会日.Size = New System.Drawing.Size(66, 19)
+        Me.lbl退会日.Size = New System.Drawing.Size(82, 24)
         Me.lbl退会日.TabIndex = 38
         Me.lbl退会日.Text = "退会日"
         '
         'lbl銀行名
         '
         Me.lbl銀行名.AutoSize = True
-        Me.lbl銀行名.Location = New System.Drawing.Point(29, 213)
-        Me.lbl銀行名.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl銀行名.Location = New System.Drawing.Point(38, 269)
         Me.lbl銀行名.Name = "lbl銀行名"
-        Me.lbl銀行名.Size = New System.Drawing.Size(66, 19)
+        Me.lbl銀行名.Size = New System.Drawing.Size(82, 24)
         Me.lbl銀行名.TabIndex = 41
         Me.lbl銀行名.Text = "銀行名"
         '
         'lbl銀行支店名
         '
         Me.lbl銀行支店名.AutoSize = True
-        Me.lbl銀行支店名.Location = New System.Drawing.Point(312, 213)
-        Me.lbl銀行支店名.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl銀行支店名.Location = New System.Drawing.Point(406, 269)
         Me.lbl銀行支店名.Name = "lbl銀行支店名"
-        Me.lbl銀行支店名.Size = New System.Drawing.Size(66, 19)
+        Me.lbl銀行支店名.Size = New System.Drawing.Size(82, 24)
         Me.lbl銀行支店名.TabIndex = 43
         Me.lbl銀行支店名.Text = "支店名"
         '
         'lbl口座番号
         '
         Me.lbl口座番号.AutoSize = True
-        Me.lbl口座番号.Location = New System.Drawing.Point(610, 213)
-        Me.lbl口座番号.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl口座番号.Location = New System.Drawing.Point(793, 269)
         Me.lbl口座番号.Name = "lbl口座番号"
-        Me.lbl口座番号.Size = New System.Drawing.Size(85, 19)
+        Me.lbl口座番号.Size = New System.Drawing.Size(106, 24)
         Me.lbl口座番号.TabIndex = 45
         Me.lbl口座番号.Text = "口座番号"
         '
         'lbl口座名義
         '
         Me.lbl口座名義.AutoSize = True
-        Me.lbl口座名義.Location = New System.Drawing.Point(919, 213)
-        Me.lbl口座名義.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl口座名義.Location = New System.Drawing.Point(1195, 269)
         Me.lbl口座名義.Name = "lbl口座名義"
-        Me.lbl口座名義.Size = New System.Drawing.Size(85, 19)
+        Me.lbl口座名義.Size = New System.Drawing.Size(106, 24)
         Me.lbl口座名義.TabIndex = 48
         Me.lbl口座名義.Text = "口座名義"
         '
         'lbl備考
         '
         Me.lbl備考.AutoSize = True
-        Me.lbl備考.Location = New System.Drawing.Point(49, 245)
-        Me.lbl備考.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lbl備考.Location = New System.Drawing.Point(64, 309)
         Me.lbl備考.Name = "lbl備考"
-        Me.lbl備考.Size = New System.Drawing.Size(47, 19)
+        Me.lbl備考.Size = New System.Drawing.Size(58, 24)
         Me.lbl備考.TabIndex = 50
         Me.lbl備考.Text = "備考"
         '
@@ -285,142 +268,142 @@ Partial Class frmM会員
         '
         Me.txt会員ID.BackColor = System.Drawing.SystemColors.Window
         Me.txt会員ID.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt会員ID.Location = New System.Drawing.Point(100, 16)
-        Me.txt会員ID.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt会員ID.Location = New System.Drawing.Point(130, 20)
+        Me.txt会員ID.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt会員ID.MaxLength = 50
         Me.txt会員ID.Name = "txt会員ID"
-        Me.txt会員ID.Size = New System.Drawing.Size(79, 26)
+        Me.txt会員ID.Size = New System.Drawing.Size(101, 31)
         Me.txt会員ID.TabIndex = 1
         '
         'txtパスワード
         '
         Me.txtパスワード.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txtパスワード.Location = New System.Drawing.Point(383, 16)
-        Me.txtパスワード.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtパスワード.Location = New System.Drawing.Point(498, 20)
+        Me.txtパスワード.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtパスワード.MaxLength = 50
         Me.txtパスワード.Name = "txtパスワード"
-        Me.txtパスワード.Size = New System.Drawing.Size(164, 26)
+        Me.txtパスワード.Size = New System.Drawing.Size(212, 31)
         Me.txtパスワード.TabIndex = 4
         '
         'txtフリガナ
         '
         Me.txtフリガナ.ImeMode = System.Windows.Forms.ImeMode.Katakana
-        Me.txtフリガナ.Location = New System.Drawing.Point(100, 48)
-        Me.txtフリガナ.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtフリガナ.Location = New System.Drawing.Point(130, 61)
+        Me.txtフリガナ.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtフリガナ.MaxLength = 50
         Me.txtフリガナ.Name = "txtフリガナ"
-        Me.txtフリガナ.Size = New System.Drawing.Size(164, 26)
+        Me.txtフリガナ.Size = New System.Drawing.Size(212, 31)
         Me.txtフリガナ.TabIndex = 7
         Me.txtフリガナ.TabStop = False
         '
         'txt氏名
         '
         Me.txt氏名.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt氏名.Location = New System.Drawing.Point(100, 80)
-        Me.txt氏名.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt氏名.Location = New System.Drawing.Point(130, 101)
+        Me.txt氏名.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt氏名.MaxLength = 50
         Me.txt氏名.Name = "txt氏名"
-        Me.txt氏名.Size = New System.Drawing.Size(164, 26)
+        Me.txt氏名.Size = New System.Drawing.Size(212, 31)
         Me.txt氏名.TabIndex = 14
         '
         'txt郵便番号
         '
         Me.txt郵便番号.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt郵便番号.Location = New System.Drawing.Point(100, 144)
-        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt郵便番号.Location = New System.Drawing.Point(130, 182)
+        Me.txt郵便番号.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt郵便番号.MaxLength = 50
         Me.txt郵便番号.Name = "txt郵便番号"
-        Me.txt郵便番号.Size = New System.Drawing.Size(96, 26)
+        Me.txt郵便番号.Size = New System.Drawing.Size(124, 31)
         Me.txt郵便番号.TabIndex = 29
         '
         'txt住所
         '
         Me.txt住所.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt住所.Location = New System.Drawing.Point(223, 144)
-        Me.txt住所.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt住所.Location = New System.Drawing.Point(290, 182)
+        Me.txt住所.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt住所.MaxLength = 50
         Me.txt住所.Name = "txt住所"
-        Me.txt住所.Size = New System.Drawing.Size(949, 26)
+        Me.txt住所.Size = New System.Drawing.Size(1232, 31)
         Me.txt住所.TabIndex = 31
         '
         'txt電話番号
         '
         Me.txt電話番号.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt電話番号.Location = New System.Drawing.Point(699, 79)
-        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt電話番号.Location = New System.Drawing.Point(909, 100)
+        Me.txt電話番号.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt電話番号.MaxLength = 50
         Me.txt電話番号.Name = "txt電話番号"
-        Me.txt電話番号.Size = New System.Drawing.Size(164, 26)
+        Me.txt電話番号.Size = New System.Drawing.Size(212, 31)
         Me.txt電話番号.TabIndex = 21
         '
         'txtメールアドレス
         '
         Me.txtメールアドレス.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txtメールアドレス.Location = New System.Drawing.Point(382, 114)
-        Me.txtメールアドレス.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtメールアドレス.Location = New System.Drawing.Point(497, 144)
+        Me.txtメールアドレス.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtメールアドレス.MaxLength = 50
         Me.txtメールアドレス.Name = "txtメールアドレス"
-        Me.txtメールアドレス.Size = New System.Drawing.Size(481, 26)
+        Me.txtメールアドレス.Size = New System.Drawing.Size(624, 31)
         Me.txtメールアドレス.TabIndex = 27
         '
         'txt銀行名
         '
         Me.txt銀行名.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt銀行名.Location = New System.Drawing.Point(99, 210)
-        Me.txt銀行名.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt銀行名.Location = New System.Drawing.Point(129, 265)
+        Me.txt銀行名.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt銀行名.MaxLength = 50
         Me.txt銀行名.Name = "txt銀行名"
-        Me.txt銀行名.Size = New System.Drawing.Size(164, 26)
+        Me.txt銀行名.Size = New System.Drawing.Size(212, 31)
         Me.txt銀行名.TabIndex = 42
         '
         'txt銀行支店名
         '
         Me.txt銀行支店名.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt銀行支店名.Location = New System.Drawing.Point(382, 210)
-        Me.txt銀行支店名.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt銀行支店名.Location = New System.Drawing.Point(497, 265)
+        Me.txt銀行支店名.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt銀行支店名.MaxLength = 50
         Me.txt銀行支店名.Name = "txt銀行支店名"
-        Me.txt銀行支店名.Size = New System.Drawing.Size(164, 26)
+        Me.txt銀行支店名.Size = New System.Drawing.Size(212, 31)
         Me.txt銀行支店名.TabIndex = 44
         '
         'txt口座番号
         '
         Me.txt口座番号.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt口座番号.Location = New System.Drawing.Point(760, 207)
-        Me.txt口座番号.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt口座番号.Location = New System.Drawing.Point(988, 261)
+        Me.txt口座番号.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt口座番号.MaxLength = 50
         Me.txt口座番号.Name = "txt口座番号"
-        Me.txt口座番号.Size = New System.Drawing.Size(134, 26)
+        Me.txt口座番号.Size = New System.Drawing.Size(173, 31)
         Me.txt口座番号.TabIndex = 47
         '
         'txt口座名義
         '
         Me.txt口座名義.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt口座名義.Location = New System.Drawing.Point(1008, 210)
-        Me.txt口座名義.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt口座名義.Location = New System.Drawing.Point(1310, 265)
+        Me.txt口座名義.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt口座名義.MaxLength = 50
         Me.txt口座名義.Name = "txt口座名義"
-        Me.txt口座名義.Size = New System.Drawing.Size(164, 26)
+        Me.txt口座名義.Size = New System.Drawing.Size(212, 31)
         Me.txt口座名義.TabIndex = 49
         '
         'txt備考
         '
         Me.txt備考.ImeMode = System.Windows.Forms.ImeMode.[On]
-        Me.txt備考.Location = New System.Drawing.Point(100, 242)
-        Me.txt備考.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt備考.Location = New System.Drawing.Point(130, 306)
+        Me.txt備考.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txt備考.Multiline = True
         Me.txt備考.Name = "txt備考"
-        Me.txt備考.Size = New System.Drawing.Size(787, 87)
+        Me.txt備考.Size = New System.Drawing.Size(1022, 109)
         Me.txt備考.TabIndex = 51
         '
         'rdo男
         '
         Me.rdo男.AutoSize = True
         Me.rdo男.Checked = True
-        Me.rdo男.Location = New System.Drawing.Point(14, 3)
-        Me.rdo男.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.rdo男.Location = New System.Drawing.Point(18, 4)
+        Me.rdo男.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rdo男.Name = "rdo男"
-        Me.rdo男.Size = New System.Drawing.Size(46, 23)
+        Me.rdo男.Size = New System.Drawing.Size(55, 28)
         Me.rdo男.TabIndex = 0
         Me.rdo男.TabStop = True
         Me.rdo男.Text = "男"
@@ -429,10 +412,10 @@ Partial Class frmM会員
         'rdo女
         '
         Me.rdo女.AutoSize = True
-        Me.rdo女.Location = New System.Drawing.Point(64, 3)
-        Me.rdo女.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.rdo女.Location = New System.Drawing.Point(83, 4)
+        Me.rdo女.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rdo女.Name = "rdo女"
-        Me.rdo女.Size = New System.Drawing.Size(46, 23)
+        Me.rdo女.Size = New System.Drawing.Size(55, 28)
         Me.rdo女.TabIndex = 1
         Me.rdo女.Text = "女"
         Me.rdo女.UseVisualStyleBackColor = True
@@ -440,19 +423,19 @@ Partial Class frmM会員
         'cmb担当理事
         '
         Me.cmb担当理事.FormattingEnabled = True
-        Me.cmb担当理事.Location = New System.Drawing.Point(99, 176)
-        Me.cmb担当理事.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.cmb担当理事.Location = New System.Drawing.Point(129, 222)
+        Me.cmb担当理事.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmb担当理事.Name = "cmb担当理事"
-        Me.cmb担当理事.Size = New System.Drawing.Size(164, 27)
+        Me.cmb担当理事.Size = New System.Drawing.Size(212, 32)
         Me.cmb担当理事.TabIndex = 33
         '
         'btn登録
         '
         Me.btn登録.ForeColor = System.Drawing.Color.Blue
-        Me.btn登録.Location = New System.Drawing.Point(1047, 293)
-        Me.btn登録.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn登録.Location = New System.Drawing.Point(1361, 370)
+        Me.btn登録.Margin = New System.Windows.Forms.Padding(6)
         Me.btn登録.Name = "btn登録"
-        Me.btn登録.Size = New System.Drawing.Size(125, 36)
+        Me.btn登録.Size = New System.Drawing.Size(162, 45)
         Me.btn登録.TabIndex = 52
         Me.btn登録.Text = "登録"
         Me.btn登録.UseVisualStyleBackColor = True
@@ -466,14 +449,14 @@ Partial Class frmM会員
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv一覧.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv一覧.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colID, Me.col会員ID, Me.colLINE送信, Me.col氏名, Me.colフリガナ, Me.colパスワード, Me.col役職名, Me.col性別, Me.col生年月日, Me.col郵便番号, Me.col住所, Me.col電話番号, Me.colラインID, Me.colメールアドレス, Me.col担当理事, Me.col入会日, Me.col退会日, Me.col銀行名, Me.col銀行支店名, Me.col口座種類, Me.col口座番号, Me.col口座名義, Me.col備考})
-        Me.dgv一覧.Location = New System.Drawing.Point(17, 339)
-        Me.dgv一覧.Margin = New System.Windows.Forms.Padding(5)
+        Me.dgv一覧.Location = New System.Drawing.Point(22, 428)
+        Me.dgv一覧.Margin = New System.Windows.Forms.Padding(6)
         Me.dgv一覧.Name = "dgv一覧"
         Me.dgv一覧.RowHeadersVisible = False
         Me.dgv一覧.RowHeadersWidth = 51
         Me.dgv一覧.RowTemplate.Height = 30
         Me.dgv一覧.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv一覧.Size = New System.Drawing.Size(1155, 345)
+        Me.dgv一覧.Size = New System.Drawing.Size(1873, 578)
         Me.dgv一覧.TabIndex = 53
         Me.dgv一覧.TabStop = False
         '
@@ -481,6 +464,7 @@ Partial Class frmM会員
         '
         Me.colID.DataPropertyName = "ID"
         Me.colID.HeaderText = "ID"
+        Me.colID.MinimumWidth = 6
         Me.colID.Name = "colID"
         Me.colID.Visible = False
         Me.colID.Width = 70
@@ -489,13 +473,16 @@ Partial Class frmM会員
         '
         Me.col会員ID.DataPropertyName = "会員ID"
         Me.col会員ID.HeaderText = "会員ID"
+        Me.col会員ID.MinimumWidth = 6
         Me.col会員ID.Name = "col会員ID"
         Me.col会員ID.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.col会員ID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.col会員ID.Width = 125
         '
         'colLINE送信
         '
         Me.colLINE送信.HeaderText = "メッセージ"
+        Me.colLINE送信.MinimumWidth = 6
         Me.colLINE送信.Name = "colLINE送信"
         Me.colLINE送信.ReadOnly = True
         Me.colLINE送信.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
@@ -507,6 +494,7 @@ Partial Class frmM会員
         '
         Me.col氏名.DataPropertyName = "氏名"
         Me.col氏名.HeaderText = "氏名"
+        Me.col氏名.MinimumWidth = 6
         Me.col氏名.Name = "col氏名"
         Me.col氏名.Width = 200
         '
@@ -514,13 +502,16 @@ Partial Class frmM会員
         '
         Me.colフリガナ.DataPropertyName = "フリガナ"
         Me.colフリガナ.HeaderText = "フリガナ"
+        Me.colフリガナ.MinimumWidth = 6
         Me.colフリガナ.Name = "colフリガナ"
         Me.colフリガナ.Visible = False
+        Me.colフリガナ.Width = 125
         '
         'colパスワード
         '
         Me.colパスワード.DataPropertyName = "パスワード"
         Me.colパスワード.HeaderText = "パスワード"
+        Me.colパスワード.MinimumWidth = 6
         Me.colパスワード.Name = "colパスワード"
         Me.colパスワード.Width = 120
         '
@@ -528,6 +519,7 @@ Partial Class frmM会員
         '
         Me.col役職名.DataPropertyName = "役職名"
         Me.col役職名.HeaderText = "役職名"
+        Me.col役職名.MinimumWidth = 6
         Me.col役職名.Name = "col役職名"
         Me.col役職名.Width = 200
         '
@@ -535,6 +527,7 @@ Partial Class frmM会員
         '
         Me.col性別.DataPropertyName = "性別"
         Me.col性別.HeaderText = "性別"
+        Me.col性別.MinimumWidth = 6
         Me.col性別.Name = "col性別"
         Me.col性別.Width = 70
         '
@@ -544,6 +537,7 @@ Partial Class frmM会員
         DataGridViewCellStyle1.NullValue = Nothing
         Me.col生年月日.DefaultCellStyle = DataGridViewCellStyle1
         Me.col生年月日.HeaderText = "生年月日"
+        Me.col生年月日.MinimumWidth = 6
         Me.col生年月日.Name = "col生年月日"
         Me.col生年月日.Width = 120
         '
@@ -551,6 +545,7 @@ Partial Class frmM会員
         '
         Me.col郵便番号.DataPropertyName = "郵便番号"
         Me.col郵便番号.HeaderText = "郵便番号"
+        Me.col郵便番号.MinimumWidth = 6
         Me.col郵便番号.Name = "col郵便番号"
         Me.col郵便番号.Width = 120
         '
@@ -558,6 +553,7 @@ Partial Class frmM会員
         '
         Me.col住所.DataPropertyName = "住所"
         Me.col住所.HeaderText = "住所"
+        Me.col住所.MinimumWidth = 6
         Me.col住所.Name = "col住所"
         Me.col住所.Width = 400
         '
@@ -565,6 +561,7 @@ Partial Class frmM会員
         '
         Me.col電話番号.DataPropertyName = "電話番号"
         Me.col電話番号.HeaderText = "電話番号"
+        Me.col電話番号.MinimumWidth = 6
         Me.col電話番号.Name = "col電話番号"
         Me.col電話番号.Width = 200
         '
@@ -572,12 +569,15 @@ Partial Class frmM会員
         '
         Me.colラインID.DataPropertyName = "ラインID"
         Me.colラインID.HeaderText = "ラインID"
+        Me.colラインID.MinimumWidth = 6
         Me.colラインID.Name = "colラインID"
+        Me.colラインID.Width = 125
         '
         'colメールアドレス
         '
         Me.colメールアドレス.DataPropertyName = "メールアドレス"
         Me.colメールアドレス.HeaderText = "メールアドレス"
+        Me.colメールアドレス.MinimumWidth = 6
         Me.colメールアドレス.Name = "colメールアドレス"
         Me.colメールアドレス.Width = 200
         '
@@ -585,6 +585,7 @@ Partial Class frmM会員
         '
         Me.col担当理事.DataPropertyName = "担当理事"
         Me.col担当理事.HeaderText = "担当理事"
+        Me.col担当理事.MinimumWidth = 6
         Me.col担当理事.Name = "col担当理事"
         Me.col担当理事.Width = 200
         '
@@ -592,6 +593,7 @@ Partial Class frmM会員
         '
         Me.col入会日.DataPropertyName = "入会日"
         Me.col入会日.HeaderText = "入会日"
+        Me.col入会日.MinimumWidth = 6
         Me.col入会日.Name = "col入会日"
         Me.col入会日.Width = 120
         '
@@ -599,6 +601,7 @@ Partial Class frmM会員
         '
         Me.col退会日.DataPropertyName = "退会日"
         Me.col退会日.HeaderText = "退会日"
+        Me.col退会日.MinimumWidth = 6
         Me.col退会日.Name = "col退会日"
         Me.col退会日.Width = 120
         '
@@ -606,6 +609,7 @@ Partial Class frmM会員
         '
         Me.col銀行名.DataPropertyName = "銀行名"
         Me.col銀行名.HeaderText = "銀行名"
+        Me.col銀行名.MinimumWidth = 6
         Me.col銀行名.Name = "col銀行名"
         Me.col銀行名.Width = 120
         '
@@ -613,6 +617,7 @@ Partial Class frmM会員
         '
         Me.col銀行支店名.DataPropertyName = "銀行支店名"
         Me.col銀行支店名.HeaderText = "銀行支店名"
+        Me.col銀行支店名.MinimumWidth = 6
         Me.col銀行支店名.Name = "col銀行支店名"
         Me.col銀行支店名.Width = 130
         '
@@ -620,6 +625,7 @@ Partial Class frmM会員
         '
         Me.col口座種類.DataPropertyName = "口座種類"
         Me.col口座種類.HeaderText = "口座種類"
+        Me.col口座種類.MinimumWidth = 6
         Me.col口座種類.Name = "col口座種類"
         Me.col口座種類.Width = 120
         '
@@ -627,6 +633,7 @@ Partial Class frmM会員
         '
         Me.col口座番号.DataPropertyName = "口座番号"
         Me.col口座番号.HeaderText = "口座番号"
+        Me.col口座番号.MinimumWidth = 6
         Me.col口座番号.Name = "col口座番号"
         Me.col口座番号.Width = 120
         '
@@ -634,6 +641,7 @@ Partial Class frmM会員
         '
         Me.col口座名義.DataPropertyName = "口座名義"
         Me.col口座名義.HeaderText = "口座名義"
+        Me.col口座名義.MinimumWidth = 6
         Me.col口座名義.Name = "col口座名義"
         Me.col口座名義.Width = 200
         '
@@ -641,6 +649,7 @@ Partial Class frmM会員
         '
         Me.col備考.DataPropertyName = "備考"
         Me.col備考.HeaderText = "備考"
+        Me.col備考.MinimumWidth = 6
         Me.col備考.Name = "col備考"
         Me.col備考.Width = 300
         '
@@ -648,17 +657,17 @@ Partial Class frmM会員
         '
         Me.btn取得.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.btn取得.ForeColor = System.Drawing.Color.Red
-        Me.btn取得.Location = New System.Drawing.Point(196, 144)
-        Me.btn取得.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn取得.Location = New System.Drawing.Point(255, 182)
+        Me.btn取得.Margin = New System.Windows.Forms.Padding(6)
         Me.btn取得.Name = "btn取得"
-        Me.btn取得.Size = New System.Drawing.Size(26, 26)
+        Me.btn取得.Size = New System.Drawing.Size(34, 33)
         Me.btn取得.TabIndex = 30
         Me.btn取得.Text = "〒"
         Me.btn取得.UseVisualStyleBackColor = True
         '
         'btn閉じる
         '
-        Me.btn閉じる.Location = New System.Drawing.Point(1498, 1094)
+        Me.btn閉じる.Location = New System.Drawing.Point(800, 500)
         Me.btn閉じる.Margin = New System.Windows.Forms.Padding(5)
         Me.btn閉じる.Name = "btn閉じる"
         Me.btn閉じる.Size = New System.Drawing.Size(125, 36)
@@ -670,28 +679,28 @@ Partial Class frmM会員
         '
         Me.Panel1.Controls.Add(Me.rdo男)
         Me.Panel1.Controls.Add(Me.rdo女)
-        Me.Panel1.Location = New System.Drawing.Point(699, 46)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Panel1.Location = New System.Drawing.Point(909, 58)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(6)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(117, 28)
+        Me.Panel1.Size = New System.Drawing.Size(152, 35)
         Me.Panel1.TabIndex = 12
         '
         'txt退会日
         '
         Me.txt退会日.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt退会日.Location = New System.Drawing.Point(699, 175)
-        Me.txt退会日.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt退会日.Location = New System.Drawing.Point(909, 221)
+        Me.txt退会日.Margin = New System.Windows.Forms.Padding(6)
         Me.txt退会日.Name = "txt退会日"
-        Me.txt退会日.Size = New System.Drawing.Size(164, 26)
+        Me.txt退会日.Size = New System.Drawing.Size(212, 31)
         Me.txt退会日.TabIndex = 39
         '
         'btn退会日
         '
         Me.btn退会日.Image = Global.カシオペイア.My.Resources.Resources.カレンダー
-        Me.btn退会日.Location = New System.Drawing.Point(863, 176)
-        Me.btn退会日.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn退会日.Location = New System.Drawing.Point(1122, 222)
+        Me.btn退会日.Margin = New System.Windows.Forms.Padding(6)
         Me.btn退会日.Name = "btn退会日"
-        Me.btn退会日.Size = New System.Drawing.Size(26, 26)
+        Me.btn退会日.Size = New System.Drawing.Size(34, 33)
         Me.btn退会日.TabIndex = 40
         Me.btn退会日.TabStop = False
         Me.btn退会日.UseVisualStyleBackColor = True
@@ -699,28 +708,28 @@ Partial Class frmM会員
         'txt生年月日
         '
         Me.txt生年月日.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt生年月日.Location = New System.Drawing.Point(383, 80)
-        Me.txt生年月日.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt生年月日.Location = New System.Drawing.Point(498, 101)
+        Me.txt生年月日.Margin = New System.Windows.Forms.Padding(6)
         Me.txt生年月日.Name = "txt生年月日"
-        Me.txt生年月日.Size = New System.Drawing.Size(164, 26)
+        Me.txt生年月日.Size = New System.Drawing.Size(212, 31)
         Me.txt生年月日.TabIndex = 17
         '
         'txt入会日
         '
         Me.txt入会日.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txt入会日.Location = New System.Drawing.Point(382, 176)
-        Me.txt入会日.Margin = New System.Windows.Forms.Padding(5)
+        Me.txt入会日.Location = New System.Drawing.Point(497, 222)
+        Me.txt入会日.Margin = New System.Windows.Forms.Padding(6)
         Me.txt入会日.Name = "txt入会日"
-        Me.txt入会日.Size = New System.Drawing.Size(164, 26)
+        Me.txt入会日.Size = New System.Drawing.Size(212, 31)
         Me.txt入会日.TabIndex = 35
         '
         'btn入会日
         '
         Me.btn入会日.Image = Global.カシオペイア.My.Resources.Resources.カレンダー
-        Me.btn入会日.Location = New System.Drawing.Point(546, 176)
-        Me.btn入会日.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn入会日.Location = New System.Drawing.Point(710, 222)
+        Me.btn入会日.Margin = New System.Windows.Forms.Padding(6)
         Me.btn入会日.Name = "btn入会日"
-        Me.btn入会日.Size = New System.Drawing.Size(26, 26)
+        Me.btn入会日.Size = New System.Drawing.Size(34, 33)
         Me.btn入会日.TabIndex = 36
         Me.btn入会日.TabStop = False
         Me.btn入会日.UseVisualStyleBackColor = True
@@ -728,10 +737,10 @@ Partial Class frmM会員
         'btn生年月日
         '
         Me.btn生年月日.Image = Global.カシオペイア.My.Resources.Resources.カレンダー
-        Me.btn生年月日.Location = New System.Drawing.Point(547, 80)
-        Me.btn生年月日.Margin = New System.Windows.Forms.Padding(5)
+        Me.btn生年月日.Location = New System.Drawing.Point(711, 101)
+        Me.btn生年月日.Margin = New System.Windows.Forms.Padding(6)
         Me.btn生年月日.Name = "btn生年月日"
-        Me.btn生年月日.Size = New System.Drawing.Size(26, 26)
+        Me.btn生年月日.Size = New System.Drawing.Size(34, 33)
         Me.btn生年月日.TabIndex = 18
         Me.btn生年月日.TabStop = False
         Me.btn生年月日.UseVisualStyleBackColor = True
@@ -740,10 +749,10 @@ Partial Class frmM会員
         '
         Me.cmb口座種類.FormattingEnabled = True
         Me.cmb口座種類.Items.AddRange(New Object() {"普通", "当座"})
-        Me.cmb口座種類.Location = New System.Drawing.Point(699, 207)
-        Me.cmb口座種類.Margin = New System.Windows.Forms.Padding(5)
+        Me.cmb口座種類.Location = New System.Drawing.Point(909, 261)
+        Me.cmb口座種類.Margin = New System.Windows.Forms.Padding(6)
         Me.cmb口座種類.Name = "cmb口座種類"
-        Me.cmb口座種類.Size = New System.Drawing.Size(62, 27)
+        Me.cmb口座種類.Size = New System.Drawing.Size(79, 32)
         Me.cmb口座種類.TabIndex = 46
         '
         'Label1
@@ -751,9 +760,10 @@ Partial Class frmM会員
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(184, 21)
+        Me.Label1.Location = New System.Drawing.Point(239, 27)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(0, 16)
+        Me.Label1.Size = New System.Drawing.Size(0, 20)
         Me.Label1.TabIndex = 2
         '
         'Label2
@@ -761,9 +771,10 @@ Partial Class frmM会員
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(580, 181)
+        Me.Label2.Location = New System.Drawing.Point(754, 229)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(24, 16)
+        Me.Label2.Size = New System.Drawing.Size(29, 20)
         Me.Label2.TabIndex = 37
         Me.Label2.Text = "※"
         '
@@ -772,9 +783,10 @@ Partial Class frmM会員
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(269, 85)
+        Me.Label3.Location = New System.Drawing.Point(350, 107)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(24, 16)
+        Me.Label3.Size = New System.Drawing.Size(29, 20)
         Me.Label3.TabIndex = 15
         Me.Label3.Text = "※"
         '
@@ -783,9 +795,10 @@ Partial Class frmM会員
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Red
-        Me.Label4.Location = New System.Drawing.Point(581, 86)
+        Me.Label4.Location = New System.Drawing.Point(755, 109)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(24, 16)
+        Me.Label4.Size = New System.Drawing.Size(29, 20)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "※"
         '
@@ -794,9 +807,10 @@ Partial Class frmM会員
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Red
-        Me.Label5.Location = New System.Drawing.Point(868, 84)
+        Me.Label5.Location = New System.Drawing.Point(1128, 106)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(24, 16)
+        Me.Label5.Size = New System.Drawing.Size(29, 20)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "※"
         '
@@ -805,9 +819,10 @@ Partial Class frmM会員
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label6.Location = New System.Drawing.Point(898, 83)
+        Me.Label6.Location = New System.Drawing.Point(1167, 105)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(136, 16)
+        Me.Label6.Size = New System.Drawing.Size(169, 20)
         Me.Label6.TabIndex = 23
         Me.Label6.Text = "例）000-0000-0000"
         '
@@ -816,19 +831,19 @@ Partial Class frmM会員
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Red
-        Me.Label8.Location = New System.Drawing.Point(552, 21)
+        Me.Label8.Location = New System.Drawing.Point(718, 27)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(24, 16)
+        Me.Label8.Size = New System.Drawing.Size(29, 20)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "※"
         '
         'lblラインID
         '
         Me.lblラインID.AutoSize = True
-        Me.lblラインID.Location = New System.Drawing.Point(29, 115)
-        Me.lblラインID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblラインID.Location = New System.Drawing.Point(38, 145)
         Me.lblラインID.Name = "lblラインID"
-        Me.lblラインID.Size = New System.Drawing.Size(67, 19)
+        Me.lblラインID.Size = New System.Drawing.Size(84, 24)
         Me.lblラインID.TabIndex = 24
         Me.lblラインID.Text = "ラインID"
         '
@@ -836,21 +851,20 @@ Partial Class frmM会員
         '
         Me.txtラインID.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtラインID.ImeMode = System.Windows.Forms.ImeMode.Disable
-        Me.txtラインID.Location = New System.Drawing.Point(100, 112)
-        Me.txtラインID.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txtラインID.Location = New System.Drawing.Point(130, 141)
+        Me.txtラインID.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtラインID.MaxLength = 50
         Me.txtラインID.Name = "txtラインID"
         Me.txtラインID.ReadOnly = True
-        Me.txtラインID.Size = New System.Drawing.Size(164, 26)
+        Me.txtラインID.Size = New System.Drawing.Size(212, 31)
         Me.txtラインID.TabIndex = 25
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(312, 51)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(406, 64)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(66, 19)
+        Me.Label7.Size = New System.Drawing.Size(82, 24)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "役職名"
         '
@@ -858,10 +872,10 @@ Partial Class frmM会員
         '
         Me.cmb役職名.FormattingEnabled = True
         Me.cmb役職名.Items.AddRange(New Object() {"○○理事", "△△理事", "□□理事"})
-        Me.cmb役職名.Location = New System.Drawing.Point(382, 47)
-        Me.cmb役職名.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.cmb役職名.Location = New System.Drawing.Point(497, 59)
+        Me.cmb役職名.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cmb役職名.Name = "cmb役職名"
-        Me.cmb役職名.Size = New System.Drawing.Size(164, 27)
+        Me.cmb役職名.Size = New System.Drawing.Size(212, 32)
         Me.cmb役職名.TabIndex = 9
         '
         'Label9
@@ -869,17 +883,19 @@ Partial Class frmM会員
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Red
-        Me.Label9.Location = New System.Drawing.Point(551, 53)
+        Me.Label9.Location = New System.Drawing.Point(716, 67)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(24, 16)
+        Me.Label9.Size = New System.Drawing.Size(29, 20)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = "※"
         '
         'btnクリア
         '
-        Me.btnクリア.Location = New System.Drawing.Point(914, 293)
+        Me.btnクリア.Location = New System.Drawing.Point(1188, 370)
+        Me.btnクリア.Margin = New System.Windows.Forms.Padding(4)
         Me.btnクリア.Name = "btnクリア"
-        Me.btnクリア.Size = New System.Drawing.Size(125, 36)
+        Me.btnクリア.Size = New System.Drawing.Size(162, 45)
         Me.btnクリア.TabIndex = 102
         Me.btnクリア.TabStop = False
         Me.btnクリア.Text = "クリア"
@@ -890,27 +906,29 @@ Partial Class frmM会員
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("MS UI Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Red
-        Me.Label10.Location = New System.Drawing.Point(190, 21)
+        Me.Label10.Location = New System.Drawing.Point(247, 27)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(24, 16)
+        Me.Label10.Size = New System.Drawing.Size(29, 20)
         Me.Label10.TabIndex = 103
         Me.Label10.Text = "※"
         '
         'btn会員名簿
         '
         Me.btn会員名簿.ForeColor = System.Drawing.Color.Green
-        Me.btn会員名簿.Location = New System.Drawing.Point(889, 694)
+        Me.btn会員名簿.Location = New System.Drawing.Point(1424, 1261)
+        Me.btn会員名簿.Margin = New System.Windows.Forms.Padding(4)
         Me.btn会員名簿.Name = "btn会員名簿"
-        Me.btn会員名簿.Size = New System.Drawing.Size(125, 40)
+        Me.btn会員名簿.Size = New System.Drawing.Size(162, 51)
         Me.btn会員名簿.TabIndex = 104
         Me.btn会員名簿.Text = "会員名簿"
         Me.btn会員名簿.UseVisualStyleBackColor = True
         '
         'frmM会員
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 19.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1184, 741)
+        Me.ClientSize = New System.Drawing.Size(1536, 962)
         Me.Controls.Add(Me.btn会員名簿)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.btnクリア)
@@ -969,7 +987,7 @@ Partial Class frmM会員
         Me.Controls.Add(Me.lblパスワード)
         Me.Controls.Add(Me.lbl会員ID)
         Me.ImeMode = System.Windows.Forms.ImeMode.Katakana
-        Me.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmM会員"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " 会員マスタ      "

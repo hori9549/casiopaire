@@ -1,4 +1,5 @@
 ﻿Public Class frmメニュー
+
     Private Shared _mutex As System.Threading.Mutex
     Private OpenForm As Form
 
@@ -12,7 +13,8 @@
         lblバージョン.Text = "Ver" + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString()
 
         ''環境設定読み込み
-        my環境設定 = New cls環境設定
+        my環境設定 = New cls環境設定        'どのFormからも見えるようにModule内に定義している
+
         tim時間.Enabled = True
 
         lbl日付.Text = Now.Date.ToString("yyyy/MM/dd（ddd）")

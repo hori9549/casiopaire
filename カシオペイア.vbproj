@@ -97,6 +97,7 @@
     <Compile Include="clsLineMsg.vb" />
     <Compile Include="clsコンボボックス.vb" />
     <Compile Include="cls環境設定.vb" />
+    <Compile Include="Module1.vb" />
     <Compile Include="sfrmScolorサンプル.designer.vb">
       <DependentUpon>sfrmScolorサンプル.vb</DependentUpon>
     </Compile>

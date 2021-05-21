@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Imports ClosedXML.Excel
 Module mdlCommon
-    Public my環境設定 As cls環境設定
+    '  Public my環境設定 As cls環境設定
     Public MS会員ID As String
     Public MS氏名 As String
 
