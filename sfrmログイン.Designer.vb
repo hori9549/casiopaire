@@ -25,9 +25,7 @@ Partial Class sfrmログイン
     Private Sub InitializeComponent()
         Me.lblメッセージ = New System.Windows.Forms.Label()
         Me.txtパスワード = New System.Windows.Forms.TextBox()
-        Me.txt会員ID = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Cancel_Button = New System.Windows.Forms.Button()
         Me.btnログイン = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -50,13 +48,6 @@ Partial Class sfrmログイン
         Me.txtパスワード.Size = New System.Drawing.Size(233, 26)
         Me.txtパスワード.TabIndex = 110
         '
-        'txt会員ID
-        '
-        Me.txt会員ID.Location = New System.Drawing.Point(173, 35)
-        Me.txt会員ID.Name = "txt会員ID"
-        Me.txt会員ID.Size = New System.Drawing.Size(233, 26)
-        Me.txt会員ID.TabIndex = 109
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -66,16 +57,6 @@ Partial Class sfrmログイン
         Me.Label2.Size = New System.Drawing.Size(89, 19)
         Me.Label2.TabIndex = 108
         Me.Label2.Text = "パスワード"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.Label1.Location = New System.Drawing.Point(103, 38)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 19)
-        Me.Label1.TabIndex = 107
-        Me.Label1.Text = "会員ID"
         '
         'Cancel_Button
         '
@@ -105,9 +86,7 @@ Partial Class sfrmログイン
         Me.Controls.Add(Me.btnログイン)
         Me.Controls.Add(Me.lblメッセージ)
         Me.Controls.Add(Me.txtパスワード)
-        Me.Controls.Add(Me.txt会員ID)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.MaximizeBox = False
@@ -123,9 +102,7 @@ Partial Class sfrmログイン
 
     Friend WithEvents lblメッセージ As Label
     Friend WithEvents txtパスワード As TextBox
-    Friend WithEvents txt会員ID As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Cancel_Button As Button
     Friend WithEvents btnログイン As Button
 End Class

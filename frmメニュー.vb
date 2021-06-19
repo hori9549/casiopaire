@@ -5,10 +5,10 @@
 
     Private Sub frmメニュー_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim sfrm As New sfrmログイン
-        'Select Case sfrm.ShowDialog()
-        '    Case DialogResult.OK
-        '    Case Else
-        'End Select
+        Select Case sfrm.ShowDialog()
+            Case DialogResult.OK
+            Case Else
+        End Select
 
         lblバージョン.Text = "Ver" + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString()
 

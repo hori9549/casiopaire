@@ -16,41 +16,20 @@ Public Class sfrmログイン
     End Sub
 
     Private Function subログイン() As Boolean
-        Dim cDB As New clsDB
-        Dim dtbl会員 As New DataTable
+        Dim str_CheckPassword As String = Now.Date.ToString("yyyyMMdd").Substring(7, 1)
+        Dim str_InputPassword As String = txtパスワード.Text
 
-        msSQL = "SELECT * FROM MST_会員"
-        'msSQL += " WHERE 施設ID='" & my環境設定.施設ID & "'"
-        'msSQL += " AND 会員ID='" & txt会員ID.Text & "'"
-        msSQL += " WHERE 会員ID='" & txt会員ID.Text & "'"
-
-        mCommand = cDB.getsqlComand(msSQL)
-        mSDA.SelectCommand = mCommand
-
-        Call mSDA.Fill(dtbl会員) ''データセット作成
-
-        If dtbl会員.Rows.Count = 0 Then
-            lblメッセージ.Text = "会員ID、または、パスワードに誤りがあります。"
+        'パスワード大文字・小文字判別チェック
+        If String.Compare(str_CheckPassword, str_InputPassword, True) = 0 Then
+            '認証ＯＫ
+            Return True
 
         Else
-            Dim str_CheckPassword As String = dtbl会員.Rows(0)("パスワード")
-            Dim str_InputPassword As String = txtパスワード.Text
-
-            'パスワード大文字・小文字判別チェック
-            If String.Compare(str_CheckPassword, str_InputPassword, False) = 0 Then
-                '認証ＯＫ
-                MS会員ID = dtbl会員.Rows(0)("会員ID")
-                MS氏名 = dtbl会員.Rows(0)("氏名")
-
-                Me.DialogResult = System.Windows.Forms.DialogResult.OK
-                Me.Close()
-
-            Else
-                '認証ＮＧ
-                lblメッセージ.Text = "会員ID、または、パスワードに誤りがあります。"
-
+            '認証ＮＧ
+            lblメッセージ.Text = "会員ID、または、パスワードに誤りがあります。"
+            Return False
             End If
-        End If
+
 
     End Function
 
@@ -68,7 +47,12 @@ Public Class sfrmログイン
 
         End With
 
-        Call subログイン()
+        Select Case subログイン()
+            Case True
+                Me.Close()
+            Case Else
+                txtパスワード.Select()
+        End Select
     End Sub
 
     Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
