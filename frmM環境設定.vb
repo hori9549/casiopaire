@@ -1,4 +1,6 @@
-﻿Imports System.Data
+﻿''frmM環境設定研究のためmaster上でレビュー（210708）
+''frm利用者登録=frmM環境設定
+Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class frmM環境設定
@@ -9,6 +11,7 @@ Public Class frmM環境設定
     Private myコンボ As New clsコンボボックス
     Private yomiConv As ImeComposition.ImeYomiConversion
     Private Sub frm利用者登録_FormClosed(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosedEventArgs) Handles MyBase.FormClosed
+        ''
         Call frmメニュー.Show()
     End Sub
 
