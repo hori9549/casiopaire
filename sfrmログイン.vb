@@ -73,8 +73,7 @@ Public Class sfrmログイン
 
     Private Sub Cancel_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel_Button.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Call Application.Exit()
-
+        Me.Close()
     End Sub
 
 End Class
