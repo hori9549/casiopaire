@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmM会員
-    'Inherits System.Windows.Forms.Form
+    ' Inherits System.Windows.Forms.Form
     Inherits frmベース
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
